@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,15 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Paleta personalizada basada en el logo
+				pet: {
+					'green-light': '#A4E5C3',
+					'green-medium': '#54BD95',
+					'green-dark': '#2A9D74',
+					'black': '#000000',
+					'white': '#FFFFFF',
+					'gray-light': '#F5F5F5',
 				}
 			},
 			borderRadius: {
@@ -84,11 +94,20 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-10px)' },
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float': 'float 6s ease-in-out infinite',
+			},
+			fontFamily: {
+				'cursive': ['Caveat', 'cursive'],
+				'sans': ['Open Sans', 'sans-serif'],
 			}
 		}
 	},
